@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 # Alias for RnD folders
 alias rnd_tools="cd ~/Documents/second_semester/RnD/natural_language_processing/nlu_tools/"
 alias rnd_papers="cd ~/Documents/second_semester/RnD/natural_language_processing/papers/"
+alias thesis_repo="cd ~/Documents/thesis/"
 alias ls='ls -lt --color=auto'
 
 # JAVA 8
@@ -32,7 +33,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/
 export PATH=$JAVA_HOME:$PATH
 
 # Add Jython to the path
-export PATH=$HOME/tools/jython2.7.0/bin:$PATH
+# export PATH=$HOME/tools/jython2.7.0/bin:$PATH
 
 # ---- ROS Workspaces ----
 # RnD ROS WS
@@ -47,4 +48,8 @@ export PYTHONWARNINGS="ignore"
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 # Add trilium to the path
-export PATH=$PATH:~/tools/trilium/
+# export PATH=$PATH:~/tools/trilium/
+#
+
+export PATH="$PATH:/home/kramer/.openmpi/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/kramer/.openmpi/lib/"
