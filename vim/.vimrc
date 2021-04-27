@@ -3,6 +3,9 @@
 "execute pathogen#infect('bundle/{}')
 
 set autoindent
+set hidden
+set nocp
+filetype plugin on
 set smartindent
 set smarttab
 set shiftwidth=4
@@ -12,11 +15,13 @@ set expandtab
 set nowrap              "don't wrap lines
 set wildmenu            "better command-line completion
 set showcmd             "show partial commands in the last line of the screen
-set hlsearch
+set hlsearch            "search highlight
+set incsearch           "incremental search highlight
 set laststatus=2        "always show the status bar
 set mouse=a             "don't copy numbers when selecting an area with a mouse
 
 set number                  "turn numbers (on the left side) on
+set relativenumber                "change line number relative to current line
 set printoptions=number:y   "print with numbers
 set history=1000            "keep a long list of history
 set noeb vb t_vb=           "get ride of error bells
